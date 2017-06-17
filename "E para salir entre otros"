@@ -1,0 +1,61 @@
+package javaapplication5;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class JavaApplication5 {
+
+    public static void main(String[] args) {
+
+        ArrayList <String> arreglo =new ArrayList<>();
+        
+        
+        /*arreglo.add("R");
+        arreglo.add("O");
+        arreglo.add("B");
+        arreglo.add("E");
+        arreglo.add("R");
+        arreglo.add("T");*/
+        
+        Scanner teclado=new Scanner (System.in);
+        Character letra;
+        /*do{
+            System.out.print("Ingrese una tecla del nombre(E para salir)");
+            letra=teclado.nextLine().charAt(0);
+            arreglo.add(letra.toString());
+        }while(letra!='e');*/
+        
+        /*while(true){
+           System.out.println("Ingrese una letra del nombre(E para salir)");
+           letra=teclado.nextLine().charAt(0);
+           if(letra=='E')
+                break;
+           arreglo.add(letra.toString());
+        
+        }do*/
+        
+            for(;true;)
+                
+            {System.out.println("Ingrese una letra del nombre(E para salir)");
+           letra=teclado.nextLine().charAt(0);
+           if(letra=='E')
+                break;
+           arreglo.add(letra.toString());
+            }
+        
+        System.out.println("/n Imprimir variable del array");
+        
+        /*System.out.println("/nLetra: "+arreglo.get(0));
+        System.out.println("/nLetra: "+arreglo.get(1));
+        System.out.println("/nLetra: "+arreglo.get(2));
+        System.out.println("/nLetra: "+arreglo.get(3));
+        System.out.println("/nLetra: "+arreglo.get(4));
+        System.out.println("/nLetra: "+arreglo.get(5));*/
+        
+        for(int i=0;i<=arreglo.size()-1;i++)
+            System.out.println ("\n Letra:" +arreglo.get(i));
+        
+        
+    }
+    
+}
