@@ -1,0 +1,48 @@
+package ESTRUCTURA;
+
+import java.util.Scanner;
+
+
+public class ESTRUCTURA {
+
+    
+    public static void main(String args[]) {
+        
+        
+     String nombre = "Javier"  ;  
+    String apellido="Reyes";
+     String letra;
+
+     
+    Scanner teclado  = new Scanner(System.in);
+
+ do
+	{         
+            
+            System.out.println("mostar nombre"+"  "+nombre );
+            System.out.println("cuantos caracteres tiene" +"  "+nombre.length());
+            System.out.println("primer letra"+"  "+nombre.charAt(0));
+	    
+            System.out.println("[para continuar pulsa 'C']:");
+           
+            
+             System.out.println("pulsar cualquier tecla ");
+            teclado.nextLine();
+            
+            System.out.println("mostrar apellido"+"  "+apellido);
+            System.out.println("cuantos caracteres tiene"+" "+apellido.length());
+            System.out.println("Tercer letra"+"  "+apellido.charAt(2));
+             
+            
+            System.out.println("[para salir pulsa 'Q']:");
+            letra = teclado.next();
+         nombre=teclado.nextLine();
+        
+       
+        }while (!letra.equals("Q"));
+            
+        System.out.println("Has salido del ciclo, Gracias");
+        
+    }
+    
+}
