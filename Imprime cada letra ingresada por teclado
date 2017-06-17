@@ -1,0 +1,38 @@
+package javaapplication3;
+
+import java.util.*;
+
+
+public class JavaApplication3 {
+    
+    /*Imprime cada letra ingresada por teclado */
+    
+    
+    public static void main(String args[]) {
+      ArrayList<String> x=new ArrayList<String>();
+       /* x.add("A");
+        x.add("x");
+        x.add("e");
+        x.add("l");
+       */
+        
+        Scanner teclado= new Scanner(System.in);
+        Character letra;
+        do{
+      System.out.println("\n imprimiendo variables del arreglo");  
+        letra=teclado.nextLine().charAt(0);
+        x.add(letra.toString());
+        
+        
+        }while(letra!='e');
+      
+                for(int i=0; i<=x.size()-1; i++) 
+                System.out.println("\nLetra: "+x.get(i));
+                      
+                System.out.println("\n imprimiendo variables del array" );
+            
+    
+    }
+          
+    }
+    
