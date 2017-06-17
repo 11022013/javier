@@ -1,0 +1,48 @@
+package terceroa.clase10;
+import java.util.*;
+/**
+ *
+ * @author PRACTICAS
+ */
+public class TERCEROACLASE10 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Stack pila=new Stack();
+        pila.push("Robert");
+        pila.push("Wilfrido");
+        pila.push("Moreira");
+        pila.push("Centeno");
+        
+        if(pila.empty()==true){
+            System.out.println("Pila vacia");   
+        }else{
+            System.out.println("Pila llena aún");
+        }
+        System.out.println("Imprimiendo elemento");
+        System.out.println(pila.pop());
+        System.out.println("Imprimiendo elemento");
+        System.out.println(pila.pop());
+        
+        System.out.println("Mostrando elemento tope");
+        System.out.println(pila.peek());
+        
+        System.out.println("Imprimiendo elemento");
+        System.out.println(pila.pop());
+        
+    }
+    
+}
+
+Pila llena aún
+Imprimiendo elemento
+Centeno
+Imprimiendo elemento
+Moreira
+Mostrando elemento tope
+Wilfrido
+Imprimiendo elemento
+Wilfrido
