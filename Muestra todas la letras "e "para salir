@@ -1,0 +1,43 @@
+package javierreyesa;
+
+import java.util.Scanner;
+
+public class JavierReyesAcosta3A {
+
+    public static void main(String[] args) {
+      Scanner j =new Scanner(System.in);
+        Character a;
+
+        System.out.println("Aplicación -Lectura de datos-");
+
+        do{
+            System.out.println("Por favor presione una tecla para continuar(e para salir):");
+            a=j.nextLine().charAt(0);
+   
+        }while(a!='e');
+                      System.out.println("Presionó la tecla e");
+                      System.out.println("\n Se ha finalizado este ciclo Gracias!" );
+        
+        
+    }
+    
+}
+
+Aplicación -Lectura de datos-
+Por favor presione una tecla para continuar(e para salir):
+n
+Por favor presione una tecla para continuar(e para salir):
+c
+Por favor presione una tecla para continuar(e para salir):
+d
+Por favor presione una tecla para continuar(e para salir):
+d
+Por favor presione una tecla para continuar(e para salir):
+d
+Por favor presione una tecla para continuar(e para salir):
+d
+Por favor presione una tecla para continuar(e para salir):
+e
+Presionó la tecla e
+
+ Se ha finalizado este ciclo Gracias!
